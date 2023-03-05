@@ -1,0 +1,51 @@
+<html>
+        <body><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h1:first-letter{
+                font-family:cursive;
+                color:blue;
+                text-shadow:9px 9px 9px red
+            }
+            body{
+                text-align:center;
+                background-color:green;
+                color:white;
+            }
+            h1:hover{
+               transform:scale(1.5);
+            }
+            p{
+                font-size:40px;
+            }
+            </style>
+        <meta charset="UTF-8">
+        <meta content="IE-edge">
+        <meta name="viewport">
+        <meta content="origin">
+        <meta http-equiv="X-A-compatable">
+        <title>time on the clock today</title>
+        <script>
+            function changeTime(){
+                var time=new Date()
+                document.getElementById("para").innerHTML=time.toLocaleTimeString()
+            }
+            setInterval(changeTime,1000)
+            function changeStyle(){
+          document.getElementById("para").style="color.red"
+            }
+            </script>
+     </head>
+           <body>
+               <h1>current time today</h1>
+               <p id="para" onmouseover="changeStyle()">current time:</p>
+           </body>
+</html>
+               
+</body>
+        <style><!--
+</style>
+        <script><!--
+</script>
+      </html>
